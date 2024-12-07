@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - SpaceShipTech</title>
+    
+    <!-- Enlazar el archivo CSS para productos -->
+    <link rel="stylesheet" href="../styles/styless-Productos.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Clientes</h2>
+            <p>Accede y gestiona los datos de los clientes.</p>
+            <a href="Clientes.html" class="btn-card">Ir a Clientes</a>
+        </div>
+        <div class="card">
+            <h2>Productos</h2>
+            <p>Consulta y gestiona el inventario de productos.</p>
+            <a href="Productos.html" class="btn-card">Ir a Productos</a>
+        </div>
+        <div class="card">
+            <h2>Facturas</h2>
+            <p>Verifica las facturas generadas y su estado.</p>
+            <a href="Facturas.html" class="btn-card">Ir a Facturas</a>
+        </div>
+        <div class="card">
+            <h2>Detalles de Factura</h2>
+            <p>Visualiza los detalles de cada factura.</p>
+            <a href="DetallesFactura.html" class="btn-card">Ver Detalles</a>
+        </div>
+    </div>
+    
+    <h1>Productos</h1>
+    <table id="productosTable">
+        <thead>
+            <tr>
+                <th>ID Producto</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los datos se llenarán dinámicamente -->
+        </tbody>
+    </table>
+    
+
+    <!-- Enlazar el archivo JS para productos -->
+    <script src="../scripts/app-Productos.js"></script>
+</body>
+</html>

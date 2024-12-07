@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - SpaceShipTech</title>
+    
+    <!-- Enlazar el archivo CSS para clientes -->
+    <link rel="stylesheet" href="../styles/styles-Clientes.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Clientes</h2>
+            <p>Accede y gestiona los datos de los clientes.</p>
+            <a href="Clientes.html" class="btn-card">Ir a Clientes</a>
+        </div>
+        <div class="card">
+            <h2>Productos</h2>
+            <p>Consulta y gestiona el inventario de productos.</p>
+            <a href="Productos.html" class="btn-card">Ir a Productos</a>
+        </div>
+        <div class="card">
+            <h2>Facturas</h2>
+            <p>Verifica las facturas generadas y su estado.</p>
+            <a href="Facturas.html" class="btn-card">Ir a Facturas</a>
+        </div>
+        <div class="card">
+            <h2>Detalles de Factura</h2>
+            <p>Visualiza los detalles de cada factura.</p>
+            <a href="DetallesFactura.html" class="btn-card">Ver Detalles</a>
+        </div>
+    </div>
+    <!-- Contenedor para el gráfico -->
+    <canvas id="clientesChart" width="400" height="200"></canvas>
+
+
+    <h1>Clientes</h1>
+
+    <form id="clienteForm">
+        <label for="cli_Cedula">Cédula:</label>
+        <input type="text" id="cli_Cedula"><br><br>
+        <label for="cli_Nombre">Nombre:</label>
+        <input type="text" id="cli_Nombre"><br><br>
+        <label for="cli_Email">Correo Electrónico:</label>
+        <input type="email" id="cli_Email"><br><br>
+        <label for="cli_Telefono">Teléfono:</label>
+        <input type="text" id="cli_Telefono"><br><br>
+        <label for="cli_Direccion">Dirección:</label>
+        <input type="text" id="cli_Direccion"><br><br>
+        <label for="cli_Ciudad">Ciudad:</label>
+        <input type="text" id="cli_Ciudad"><br><br>
+        <button type="submit">Guardar Cliente</button>
+    </form>
+
+
+    <h3>Lista de Clientes</h3>
+    <table id="clientesTable">
+        <thead>
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Correo Electrónico</th>
+                <th>Teléfono</th>
+                <th>Dirección</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Enlazar el archivo JS para clientes -->
+    <script src="../scripts/app-Clientes.js"></script>
+</body>
+</html>

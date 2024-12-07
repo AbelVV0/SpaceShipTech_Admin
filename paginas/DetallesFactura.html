@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Factura</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <h2>Clientes</h2>
+            <p>Accede y gestiona los datos de los clientes.</p>
+            <a href="Clientes.html" class="btn-card">Ir a Clientes</a>
+        </div>
+        <div class="card">
+            <h2>Productos</h2>
+            <p>Consulta y gestiona el inventario de productos.</p>
+            <a href="Productos.html" class="btn-card">Ir a Productos</a>
+        </div>
+        <div class="card">
+            <h2>Facturas</h2>
+            <p>Verifica las facturas generadas y su estado.</p>
+            <a href="Facturas.html" class="btn-card">Ir a Facturas</a>
+        </div>
+        <div class="card">
+            <h2>Detalles de Factura</h2>
+            <p>Visualiza los detalles de cada factura.</p>
+            <a href="DetallesFactura.html" class="btn-card">Ver Detalles</a>
+        </div>
+    </div>
+    <h1>Detalles de Factura</h1>
+
+    <!-- Tabla para mostrar los detalles de las facturas -->
+    <table id="detallesTable">
+        <thead>
+            <tr>
+                <th>ID DetalleFactura</th>
+                <th>ID Factura</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los datos se llenarán dinámicamente -->
+        </tbody>
+    </table>
+
+    <!-- Enlace al JavaScript -->
+    <script src="../scripts/app-DetallesFactura.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* Estilos globales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la tabla */
+#productosTable {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#productosTable thead {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+#productosTable th, #productosTable td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#productosTable th {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#productosTable tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+#productosTable tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+#productosTable tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos específicos para productos */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: calc(25% - 20px);
+  min-width: 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 15px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.card .btn-card {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.card .btn-card:hover {
+  background-color: #0056b3;
+}
+/* Estilos para la tabla de productos */
+#productosTable {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#productosTable thead {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+#productosTable th, #productosTable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#productosTable th {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#productosTable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#productosTable tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#productosTable tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+
+  #productosTable {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
